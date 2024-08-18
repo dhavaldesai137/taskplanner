@@ -1,0 +1,52 @@
+{
+  "format": "layers-model",
+  "generatedBy": "tensorflowjs-converter",
+  "convertedBy": "TensorFlow.js Converter v3.9.0",
+  "modelTopology": {
+    "class_name": "Sequential",
+    "config": [
+      {
+        "class_name": "Dense",
+        "config": {
+          "units": 8,
+          "activation": "relu",
+          "input_shape": [2]
+        }
+      },
+      {
+        "class_name": "Dense",
+        "config": {
+          "units": 3,
+          "activation": "softmax"
+        }
+      }
+    ]
+  },
+  "weightsManifest": [
+    {
+      "paths": ["group1-shard1of1.bin"],
+      "weights": [
+        {
+          "name": "dense/kernel",
+          "shape": [2, 8],
+          "dtype": "float32"
+        },
+        {
+          "name": "dense/bias",
+          "shape": [8],
+          "dtype": "float32"
+        },
+        {
+          "name": "dense_1/kernel",
+          "shape": [8, 3],
+          "dtype": "float32"
+        },
+        {
+          "name": "dense_1/bias",
+          "shape": [3],
+          "dtype": "float32"
+        }
+      ]
+    }
+  ]
+}
